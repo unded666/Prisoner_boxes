@@ -152,6 +152,6 @@ def monte_carlo_test(num_samples: int = 1000,
 
 if __name__ == '__main__':
 
-    success_chance = monte_carlo_test(num_samples=100000,
+    success_chance = monte_carlo_test(num_samples=50000,
                                       strategy=PrisonerStrategy.Strategy.FOLLOWER)
     print(f"probability of success: {success_chance*100:.2f}%")
